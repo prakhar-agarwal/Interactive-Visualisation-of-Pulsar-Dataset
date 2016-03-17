@@ -1,7 +1,7 @@
 '''
 To run:
 
-    python simple.py
+    python plot.py
 
 in this directory, and navigate to:
 
@@ -175,7 +175,7 @@ def polynomial():
     css_resources = INLINE.render_css()
 
     #plots = {'Red': p1, 'Blue': p2, 'Inline': INLINE}
-    
+
     #Setting up layout
     layout = hplot(p1, p2)
 
