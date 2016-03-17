@@ -171,17 +171,14 @@ def polynomial():
         ('Binary', '@Binary'),
     ])
 
-    # Configure resources to include BokehJS inline in the document.
-    # For more details see:
-    #   http://bokeh.pydata.org/en/latest/docs/reference/resources_embedding.html#bokeh-embed
     js_resources = INLINE.render_js()
     css_resources = INLINE.render_css()
 
     #plots = {'Red': p1, 'Blue': p2, 'Inline': INLINE}
+    
+    #Setting up layout
     layout = hplot(p1, p2)
-    # For more details see:
-    #   http://bokeh.pydata.org/en/latest/docs/user_guide/embedding.html#components
-    #script, div = components(p1,INLINE)
+
     script, div = components(layout,INLINE)
     html = flask.render_template(
         'embed.html',
