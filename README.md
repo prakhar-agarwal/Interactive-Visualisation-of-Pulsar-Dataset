@@ -28,11 +28,12 @@ Features:
 > 5. Pressing shift key allows user to view the selected data points on the adjacent graph pane
 > 6. Box Zoom and Wheel zoom into a selected block
 > 7. Resizing the plot area for better viewability
+> 8. Integrating Python-Flask to enable Dynamic relevant Data Source URL specification by the user
 
+To run:
 
-Future Task:
+    python plot.py
 
-> 1. Integrating Python-Flask to enable Dynamic relevant Data Source URL specification by the user
-> 2. Sliders to select a part of data to be displayed based upon lower and upper bound selected by user
+in this directory, and navigate to:
 
-
+    http://localhost:5000
