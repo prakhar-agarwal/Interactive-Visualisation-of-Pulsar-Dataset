@@ -174,8 +174,6 @@ def polynomial():
     js_resources = INLINE.render_js()
     css_resources = INLINE.render_css()
 
-    #plots = {'Red': p1, 'Blue': p2, 'Inline': INLINE}
-
     #Setting up layout
     layout = hplot(p1, p2)
 
