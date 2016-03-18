@@ -30,6 +30,11 @@ Features:
 > 7. Resizing the plot area for better viewability
 > 8. Integrating Python-Flask to enable Dynamic relevant Data Source URL specification by the user
 
+
+To install the dependencies
+
+    pip install -r requirements.txt
+
 To run:
 
     python plot.py
