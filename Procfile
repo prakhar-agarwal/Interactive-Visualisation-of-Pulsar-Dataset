@@ -1,1 +1,1 @@
-web: python plot.py
+web: gunicorn app:app

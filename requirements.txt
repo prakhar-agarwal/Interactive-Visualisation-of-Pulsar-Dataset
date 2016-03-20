@@ -16,3 +16,4 @@ singledispatch==3.4.0.3
 six==1.10.0
 tornado==4.3
 Flask==0.10.1
+gunicorn

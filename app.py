@@ -1,12 +1,8 @@
 '''
 To run:
-
     python plot.py
-
 in this directory, and navigate to:
-
     http://localhost:5000
-
 '''
 #!/usr/bin/env python
 
@@ -43,7 +39,6 @@ def getitem(obj, item, default):
 @app.route("/")
 def polynomial():
     """ Very simple embedding of a polynomial chart
-
     """
 
     # Grab the inputs arguments from the URL
@@ -154,7 +149,6 @@ def polynomial():
                 d2['DM'].push(d1['DM'][inds[i]])
                 d2['RMS'].push(d1['RMS'][inds[i]])
                 d2['Binary'].push(d1['Binary'][inds[i]])
-
             }
             s2.trigger('change');
       """  )
@@ -198,5 +192,4 @@ def polynomial():
 
 if __name__ == "__main__":
     print(__doc__)
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run()
