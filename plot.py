@@ -19,6 +19,7 @@ import pandas as pd
 import datetime
 import urllib
 import ijson
+import os
 
 from bokeh.embed import components
 from bokeh.plotting import *
@@ -197,4 +198,5 @@ def polynomial():
 
 if __name__ == "__main__":
     print(__doc__)
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
