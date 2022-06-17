@@ -6,7 +6,7 @@ futures==3.0.5
 ijson==2.3
 Jinja2==2.8
 MarkupSafe==0.23
-numpy==1.10.4
+numpy==1.21.0
 pandas==0.13.1
 python-dateutil==2.5.0
 pytz==2016.1
